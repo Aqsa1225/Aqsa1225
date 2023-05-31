@@ -46,7 +46,8 @@ body {
   }
   
   .members-section {
-    background-color: #252424;
+    
+    background: linear-gradient(to top, #99ccff 0%, #ff66ff 100%);
     padding: 40px;
     border-radius: 10px;
     text-align: center;
