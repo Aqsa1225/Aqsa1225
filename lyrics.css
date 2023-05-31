@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background: linear-gradient(to bottom, #ffccff 0%, #ccffcc 100%);
     margin: 0;
     padding: 0;
   }
@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background: linear-gradient(to bottom, #ccffff 0%, #ffcccc 100%);
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ body {
   
   .song-description {
     font-size: 16px;
-    color: #555;
+    color: #383838;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -78,7 +78,7 @@ body {
     align-items: center;
     margin-right: 20px;
     font-size: 14px;
-    color: #888;
+    color: #5e5c5c;
   }
   
   .song-detail i {
