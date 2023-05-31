@@ -133,7 +133,7 @@
   }
   
   .product-info form button {
-    background-color: #4CAF50;
+    background-color: #3dd342;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -144,23 +144,9 @@
   }
   
   .product-info form button:hover {
-    background-color: #45a049;
+    background-color: #00c9e4;
   }
   
-  .add-to-cart {
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 18px;
-  }
-  
-  .add-to-cart:hover {
-    background-color: #45a049;
-  }
   
   
   footer {
