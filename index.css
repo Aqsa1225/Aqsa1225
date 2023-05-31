@@ -1,0 +1,969 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #000000;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .bts {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 25px;
+  }
+  
+  .bts h1 {
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+  .bts p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .bts .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f35106;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 10px;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  #video-page {
+    margin-top: 20px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  /* Music videos section styles */
+#music-videos {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  .video-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .video-card {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .video-overlay i {
+    color: #fff;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  
+  .video-card:hover .video-overlay {
+    opacity: 1;
+  }
+  
+  #discography {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  #discography h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .album-link {
+    text-decoration: none;
+  }
+  
+  .album-link:hover {
+    text-decoration: none;
+  }
+  
+  .album-link:focus {
+    text-decoration: none;
+  }
+  
+  .album-link:active {
+    text-decoration: none;
+  }
+  
+  .album-title {
+    color: #000;
+    /* Add any desired styling for the album title */
+  }
+  
+  
+  .album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .album-card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .album-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .album-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .album-details {
+    padding: 10px;
+  }
+  
+  .album-details h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .album-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .buttons {
+    margin-top: 16px;
+  }
+  
+  .play-button,
+  .info-button {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .play-button:hover,
+  .info-button:hover {
+    background-color: #555;
+  }
+  
+  
+  
+  /* Rest of your CSS styles for the discography section */
+  
+  
+  
+  .slide-content h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .slide-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .play-button,
+  .info-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-button:hover,
+  .info-button:hover {
+    background-color: #ff8100;
+  }
+  
+
+
+  
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  
+  
+  
+  
+  
+
+  #upcoming-events {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .event-card {
+    max-width: 300px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .event-card h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .event-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  
+  
+
+ 
+  
+  
+  #upcoming-events {
+    padding: 40px 0;
+  }
+  
+  #upcoming-events h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .event-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .event-item {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .event-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .event-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.3s ease;
+  }
+  
+  .event-item:hover .event-overlay {
+    opacity: 1;
+  }
+  
+  .event-details {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .event-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .event-details p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .event-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #ff5572;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-button:hover {
+    background-color: #ff3f5b;
+  }
+  
+  
+
+  
+  #merchandise {
+    padding: 40px 0;
+  }
+  
+  #merchandise h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .merchandise-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .merchandise-item {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .merchandise-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .merchandise-details h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .merchandise-details p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .buy-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff5f6d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .buy-button:hover {
+    background-color: #ff3c4f;
+  }
+  
+  .merchandise-item:hover {
+    transform: scale(1.05);
+  }
+  
+  #gallery {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  #gallery h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .photo-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .download-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color: #555;
+  }
+  
+
+  
+  #testimonials {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .testimonial-item {
+    width: 320px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .testimonial-content {
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .testimonial-item {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  #song-lyrics {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #song-lyrics h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .lyrics-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .lyrics-item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .lyrics-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .lyrics-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .lyrics-item:hover .play-button {
+    display: block;
+  }
+  
+  .play-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid #000;
+  }
+  
+  .lyrics-item a {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  #news-events {
+    padding: 40px;
+    background-color: #f9f9f9;
+  }
+  
+  #news-events h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .news-events-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .news-item {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .news-info {
+    padding: 20px;
+  }
+  
+  .news-info h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .news-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7b00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: #555;
+  }
+  
+  
+  
+  
+  #contact {
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  #contact h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #1d1c1c;
+  }
+  
+  .contact-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #131212;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-form form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0f0f0f;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form form input:focus,
+  .contact-form form textarea:focus {
+    background-color: #eee;
+  }
+  
+  .contact-form form input {
+    height: 40px;
+  }
+  
+  .contact-form form textarea {
+    height: 120px;
+  }
+  
+  .contact-form form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff7315;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form form button:hover {
+    background-color: #279eff;
+  }
+  
+
+  footer {
+    background-color: #000000;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links ul li {
+    margin-right: 20px;
+  }
+  
+  .footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #1286f3;
+  }
+  
+  .social-media a {
+    display: inline-block;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social-media a img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .social-media a:hover {
+    opacity: 0.7;
+  }
+  
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff9f9;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #2b9fff;
+}
+
+
+#charity {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+#charity h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.charity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.charity-card {
+  text-align: center;
+}
+
+.charity-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.charity-card h3 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.charity-card p {
+  font-size: 14px;
+  color: #888;
+}

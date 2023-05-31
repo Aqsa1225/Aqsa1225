@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Video Page</title>
+  <link rel="stylesheet" href="index.css">
+  <head>
+    <!-- Other head elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">BTS</div>
+      <ul class="nav-links">
+        <li><a href="About.html">About</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="popular-songs.html">Popular Song</a></li>
+        <li><a href="album.html">Latest Album</a></li>
+      </ul>
+    </nav>
+    <div class="bts">
+      <h1>BTS Official Website</h1>
+      <p>Welcome to the world of BTS!</p>
+      <a href="#music-videos" class="btn">Watch Music Videos</a>
+      
+  </header>
+  
+
+  <section id="music-videos">
+    <h2>Music Videos</h2>
+    <div class="video-gallery">
+      <a href="video-page1.html"></a>
+      <div class="video-card">
+        <img src="img1.jpg" alt="Video 1"  data-video="video-page1.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="img2.jpg" alt="Video 2"  data-video="video-page2.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img3.jpg" alt="Video 2"  data-video="video-page3.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img4.jpg" alt="Video 2"  data-video="video-page4.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img5.jpeg" alt="Video 2"  data-video="video-page5.html">
+        <div class="video-overlay">
+
+            <a href="#" class="play-button">Play Now</a>
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img6.jpeg" alt="Video 2"  data-video="video-page6.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img7.jpeg" alt="Video 2"  data-video="video-page7.html">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <div class="video-card">
+        <img src="img8.jpg" alt="Video 2">
+        <div class="video-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+
+      <script>
+        // Get all the video card elements
+        const videoCards = document.querySelectorAll('.video-card');
+      
+        // Attach a click event listener to each video card
+        videoCards.forEach(card => {
+          card.addEventListener('click', function() {
+            // Get the data-video attribute value of the clicked image
+            const videoUrl = this.querySelector('img').getAttribute('data-video');
+      
+            // Navigate to the corresponding video page
+            window.location.href = videoUrl;
+          });
+        });
+      </script>
+      <!-- Add more video cards here -->
+    </div>
+  </section>
+  
+  
+  
+  
+  
+
+  <section id="discography">
+    <h2>Discography</h2>
+    <div class="album-container">
+      <a href="album.html" class="album-link">
+        <div class="album-card">
+          <img src="album1.jpg" alt="Album 1">
+          <div class="album-details">
+            <h3 class="album-title">Album 1</h3>
+            <p>Release Date: January 1, 2022</p>
+          </div>     
+        </div>
+      </a>
+      <a href="album1.html" class="album-link">
+        <div class="album-card">
+          <img src="album2.webp" alt="Album 2">
+          <div class="album-details">
+            <h3 class="album-title">Album 2</h3>
+            <p>Release Date: February 15, 2023</p>
+          </div>
+        </div>
+      </a>
+      <!-- Add more album cards here -->
+    </div>
+  </section>
+  
+  
+
+ 
+  
+  <section id="upcoming-events">
+    <h2>Upcoming Events</h2>
+    <div class="event-container">
+      <div class="event-item">
+        <div class="event-thumbnail">
+          <img src="event1.jpg" alt="Concert 1">
+          <div class="event-overlay">
+            <div class="event-details">
+              <h3>Concert Title 1</h3>
+              <p>Date: [Insert Date]</p>
+              <p>Venue: [Insert Venue]</p>
+            </div>
+            <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+      <div class="event-item">
+        <div class="event-thumbnail">
+          <img src="event2.jpg" alt="Concert 2">
+          <div class="event-overlay">
+            <div class="event-details">
+              <h3>Concert Title 2</h3>
+              <p>Date: [Insert Date]</p>
+              <p>Venue: [Insert Venue]</p>
+            </div>
+            <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-item">
+        <div class="event-thumbnail">
+          <img src="event3.jpg" alt="Concert 2">
+          <div class="event-overlay">
+            <div class="event-details">
+              <h3>Concert Title 2</h3>
+              <p>Date: [Insert Date]</p>
+              <p>Venue: [Insert Venue]</p>
+            </div>
+            <a href="#" class="event-button">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more event items -->
+    </div>
+  </section>
+  
+  
+  <section id="merchandise">
+    <h2>Merchandise</h2>
+    <div class="merchandise-container">
+      <div class="merchandise-item">
+        <div class="merchandise-thumbnail">
+          <img src="https://images.squarespace-cdn.com/content/v1/5aa2069c25bf02363bf5c7c4/1637626070783-34JY1NDH0D4XJ4MQR1YV/permission-to-dance-on-stage-la-merch-1.jpg" alt="Merchandise 1">
+        </div>
+        <div class="merchandise-details">
+          <h3>Product Title 1</h3>
+          <p>Price: $19.99</p>
+          <a href="merch1.html" class="buy-button">Buy Now</a>
+        </div>
+      </div>
+      <div class="merchandise-item">
+        <div class="merchandise-thumbnail">
+          <img src="https://pbs.twimg.com/media/FE1i4j5akAE24vc.jpg" alt="Merchandise 2">
+        </div>
+        <div class="merchandise-details">
+          <h3>Product Title 2</h3>
+          <p>Price: $24.99</p>
+          <a href="merch2.html" class="buy-button">Buy Now</a>
+        </div>
+      </div>
+      <div class="merchandise-item">
+        <div class="merchandise-thumbnail">
+          <img src="https://pbs.twimg.com/media/FE1i4hIacAEXqvH.jpg" alt="Merchandise 3">
+        </div>
+        <div class="merchandise-details">
+          <h3>Product Title 3</h3>
+          <p>Price: $14.99</p>
+          <a href="merch3.html" class="buy-button">Buy Now</a>
+        </div>
+      </div>
+      <div class="merchandise-item">
+        <div class="merchandise-thumbnail">
+          <img src="https://lh3.googleusercontent.com/ogzZ3xsaiXZ1g641YWQXjXJvS7tGX4ibyOBIcFtUP8AfpMYXH57846qaFOgtvdaETZM0MMcrsjsbxTUWb5PzxBzrEKnFitqodBermZZKDCVM03M=w960-rj-nu-e365" alt="Merchandise 3">
+        </div>
+        <div class="merchandise-details">
+          <h3>Product Title 3</h3>
+          <p>Price: $14.99</p>
+          <a href="merch4.html" class="buy-button">Buy Now</a>
+        </div>
+      </div>
+      <!-- Add more merchandise items -->
+    </div>
+  </section>
+   
+    </div>
+  </section>
+  
+  <section id="song-lyrics">
+    <h2>Song Lyrics</h2>
+    <div class="lyrics-container">
+      <div class="lyrics-item">
+        <img src="https://i1.sndcdn.com/artworks-000634256692-h10xeb-t500x500.jpg" alt="Song Lyrics 1">
+        <a href="springday.html" class="play-button"></a>
+      </div>
+      <div class="lyrics-item">
+        <img src="https://doopiano.com/wp-content/uploads/2020/03/Inner-Child.jpg" alt="Song Lyrics 2">
+        <a href="innerchild.html" class="play-button"></a>
+      </div>
+      <div class="lyrics-item">
+        <img src="https://i1.sndcdn.com/artworks-000330527937-0wtwyt-t500x500.jpg" alt="Song Lyrics 3">
+        <a href="euphoria.html" class="play-button"></a>
+      </div>
+
+      <div class="lyrics-item">
+        <img src="https://i.ytimg.com/vi/F2mbAkat5n8/maxresdefault.jpg" alt="Song Lyrics 3">
+        <a href="make-it-right.html" class="play-button"></a>
+      </div>
+
+      <div class="lyrics-item">
+        <img src="https://i1.sndcdn.com/artworks-000330527937-0wtwyt-t500x500.jpg" alt="Song Lyrics 3">
+        <a href="video-page.html" class="play-button"></a>
+      </div>
+      <!-- Add more lyrics items here -->
+    </div>
+  </section>
+ 
+  
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis a justo ultricies, sed semper sapien hendrerit."</p>
+          <p class="testimonial-author">- John Doe</p>
+        </div>
+      </div>
+      <div class="testimonial-item">
+        <div class="testimonial-content">
+          <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo velit id elit viverra aliquet."</p>
+          <p class="testimonial-author">- Jane Smith</p>
+        </div>
+      </div>
+      <!-- Add more testimonial items here -->
+    </div>
+  </section>
+
+  
+  
+  
+
+ 
+  
+  
+  <section id="news-events">
+    <h2>News & Events</h2>
+    <div class="news-events-container">
+      <div class="news-item">
+        <img src="https://www.billboard.com/wp-content/uploads/2022/11/j-hope-mama-awards-2022-billboard-1548.jpg" alt="News 1">
+        <div class="news-info">
+          <h3>News Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="read-more-button">Read More</a>
+        </div>
+      </div>
+      <div class="news-item">
+        <img src="https://images.news18.com/ibnlive/uploads/2022/11/bts-rm-indigo-16691844733x2.jpg?impolicy=website&width=510&height=356" alt="News 2">
+        <div class="news-info">
+          <h3>News Title 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="read-more-button">Read More</a>
+        </div>
+      </div>
+      <!-- Add more news items here -->
+    </div>
+  </section>
+  
+  
+  
+  
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="photo-container">
+      <div class="photo-card">
+        <img src="https://cdn.theatlantic.com/thumbor/8iYwoqtSufPZ0BQehuAv2x2QoA0=/0x383:2160x2543/1080x1080/media/img/mt/2022/11/RM_BTS_Indigo_2-1/original.jpg" alt="Photo 1">
+        <a href="https://cdn.theatlantic.com/thumbor/8iYwoqtSufPZ0BQehuAv2x2QoA0=/0x383:2160x2543/1080x1080/media/img/mt/2022/11/RM_BTS_Indigo_2-1/original.jpg" download class="download-button">&#x2B07;</a>
+      </div>
+      <div class="photo-card">
+        <img src="https://i1.wp.com/karna.id/wp-content/uploads/2022/10/master_A235rKW0F1_1770_biodata_jin_bts.jpeg?fit=624%2C493&ssl=1" alt="Photo 2">
+        <a href="https://i1.wp.com/karna.id/wp-content/uploads/2022/10/master_A235rKW0F1_1770_biodata_jin_bts.jpeg?fit=624%2C493&ssl=1" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://imgeng.jagran.com/images/2023/may/suga%20wanted%20to%20disappear%20from%20spotlight1685092351011.jpg" alt="Photo 2">
+        <a href="https://imgeng.jagran.com/images/2023/may/suga%20wanted%20to%20disappear%20from%20spotlight1685092351011.jpg" download class="download-button">&#x2B07;</a>
+      </div>
+
+      
+      <div class="photo-card">
+        <img src="https://assets.teenvogue.com/photos/603d3c30e4ad0136a2671a33/1:1/w_800,h_800,c_limit/j-hope_VER3.jpg" alt="Photo 2">
+        <a href="https://assets.teenvogue.com/photos/603d3c30e4ad0136a2671a33/1:1/w_800,h_800,c_limit/j-hope_VER3.jpg" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/jimin-bts-_birthday-one_one.jpg?VersionId=L2czCFbbqe6527pVx_iVEReVnK0X4_YP" alt="Photo 2">
+        <a href="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202210/jimin-bts-_birthday-one_one.jpg?VersionId=L2czCFbbqe6527pVx_iVEReVnK0X4_YP" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/12/24000020/featured-v.jpeg?tr=w-1200,h-900" alt="Photo 2">
+        <a href="https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/12/24000020/featured-v.jpeg?tr=w-1200,h-900" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://wallpapers.com/images/featured/m7hckgygrbholfxa.jpg" alt="Photo 2">
+        <a href="https://wallpapers.com/images/featured/m7hckgygrbholfxa.jpg" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://i.pinimg.com/originals/23/84/52/23845227d9d72eadae2386c08dcf2617.jpg" alt="Photo 2">
+        <a href="https://i.pinimg.com/originals/23/84/52/23845227d9d72eadae2386c08dcf2617.jpg" download class="download-button">&#x2B07;</a>
+      </div>
+
+      <div class="photo-card">
+        <img src="https://st1.bollywoodlife.com/wp-content/uploads/2022/04/BTS-Las-Vegas-Borahegas-BTS-ARMY-Jungkook-Taehyung-Jhope-600x315.png" alt="Photo 2">
+        <a href="https://st1.bollywoodlife.com/wp-content/uploads/2022/04/BTS-Las-Vegas-Borahegas-BTS-ARMY-Jungkook-Taehyung-Jhope-600x315.png" download class="download-button">&#x2B07;</a>
+      </div>
+    
+      <div class="photo-card">
+        <img src="https://lh3.googleusercontent.com/ZZh5qmpzaUHG_YZFk9UNIB6C92WteSeQHYCMV4VW5sY5bsntuWqyTTuZWg3DOIDW4mqEBF_aleGx5o59mCpL6M2zqLRILchg-SDKIE6IlAGx4A=w960-rj-nu-e365" alt="Photo 2">
+        <a href="https://lh3.googleusercontent.com/ZZh5qmpzaUHG_YZFk9UNIB6C92WteSeQHYCMV4VW5sY5bsntuWqyTTuZWg3DOIDW4mqEBF_aleGx5o59mCpL6M2zqLRILchg-SDKIE6IlAGx4A=w960-rj-nu-e365" download class="download-button">&#x2B07;</a>
+      </div>
+      <!-- Add more photo cards here -->
+    </div>
+  </section>
+  
+  <section id="charity">
+    <h2>Charity Work</h2>
+    <div class="charity-grid">
+      <div class="charity-card">
+        <img src="https://www.unicef.org.uk/wp-content/uploads/2018/09/LoveMyself_BTS-1.jpg" alt="Charity 1">
+        <h3>Project 1</h3>
+        <p>Description of the charity project</p>
+      </div>
+      <div class="charity-card">
+        <img src="https://i.pinimg.com/736x/5e/47/cc/5e47ccdb29fb112dce7c51d0d7f5e00f--jimin-jungkook-kim-namjoon.jpg" alt="Charity 2">
+        <h3>Project 2</h3>
+        <p>Description of the charity project</p>
+      </div>
+      <div class="charity-card">
+        <img src="https://i.ytimg.com/vi/gvtEKpPYevE/hqdefault.jpg" alt="Charity 3">
+        <h3>Project 3</h3>
+        <p>Description of the charity project</p>
+      </div>
+      <!-- Add more charity cards here -->
+    </div>
+  </section>
+  
+
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <h3>Send Message</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+    
+   
+  
+      
+     
+  
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <img src="https://wallpapers.com/images/hd/bts-debut-logo-ad2anrg0uuiwh2jz.jpg" alt="Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="About.html">About</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/bangtan.official?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/BTSW_official?t=uwHuENujdM0J94o-rRBA3Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/bts.bighitofficial?igshid=MmJiY2I4NDBkZg==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <!-- Add icons for other members' social media accounts -->
+      </div>
+    </div>
+  </footer>
+  
+  
+    
+</body>
+
+</html>
