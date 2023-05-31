@@ -1,7 +1,7 @@
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ffccff 0%, #ccffcc 100%);
+    background: linear-gradient(to top, #ff99ff 0%, #cc99ff 100%);
     margin: 0;
     padding: 0;
   }
@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #ccffff 0%, #ffcccc 100%);
+    background: linear-gradient(to top left, #ccffff 0%, #ffccff 100%);
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
