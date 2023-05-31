@@ -7,6 +7,7 @@
   /* Global styles */
   body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ff99ff 0%, #ccffcc 100%);
   }
   
   header {
@@ -51,19 +52,6 @@
     margin-top: 10px;
   }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
   
@@ -714,7 +702,7 @@
   }
   
   .read-more-button:hover {
-    background-color: #555;
+    background-color: #04cdff;
   }
   
   
