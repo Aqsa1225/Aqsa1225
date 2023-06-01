@@ -16,81 +16,108 @@
 
 <body>
   <header>
+    <!-- This is the navigation section -->
     <nav>
-      <div class="logo">BTS</div>
-      <ul class="nav-links">
-        <li><a href="About.html">About</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="lyrics1.html">Popular Song</a></li>
-        <li><a href="album1.html">Discography</a></li>
-        <li><a href="ticket-page.html">Ticket</a></li>
-      </ul>
+        <div class="logo">BTS</div>
+        <ul class="nav-links">
+            <li><a href="About.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="lyrics1.html">Popular Song</a></li>
+            <li><a href="album1.html">Discography</a></li>
+            <li><a href="ticket-page.html">Ticket</a></li>
+        </ul>
     </nav>
+
+    <!-- This is the BTS website description section -->
     <div class="bts">
-      <h1>BTS Official Website</h1>
-      <p>Welcome to the world of BTS!</p>
-      <a href="#music-videos" class="btn">Watch Music Videos</a>
-      
-  </header>
+        <h1>BTS Official Website</h1>
+        <p>Welcome to the world of BTS!</p>
+        <a href="#music-videos" class="btn">Watch Music Videos</a>
+    </div>
+</header>
+
   
 
   <section id="music-videos">
+      <!-- This is the music videos section -->
     <h2>Music Videos</h2>
     <div class="video-gallery">
       <a href="video-page1.html"></a>
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img1.jpg" alt="Video 1"  data-video="video-page1.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img2.jpg" alt="Video 2"  data-video="video-page2.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img3.jpg" alt="Video 3"  data-video="video-page3.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img4.webp" alt="Video 4"  data-video="video-page4.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img5.jpeg" alt="Video 5"  data-video="video-page5.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
-
-            <a href="#" class="play-button">Play Now</a>
-          <i class="fas fa-play-circle"></i>
+        <!-- Video overlay for play button -->
+        <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img6.jpeg" alt="Video 6"  data-video="video-page6.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img7.jpeg" alt="Video 7"  data-video="video-page7.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
 
       <div class="video-card">
+        <!-- This is a video card -->
         <img src="img8.jpg" alt="Video 8" data-video="video-page8.html">
+        <!-- Image representing the video -->
         <div class="video-overlay">
+          <!-- Video overlay for play button -->
           <i class="fas fa-play-circle"></i>
         </div>
       </div>
@@ -98,18 +125,19 @@
       <script>
         // Get all the video card elements
         const videoCards = document.querySelectorAll('.video-card');
-      
+    
         // Attach a click event listener to each video card
         videoCards.forEach(card => {
-          card.addEventListener('click', function() {
-            // Get the data-video attribute value of the clicked image
-            const videoUrl = this.querySelector('img').getAttribute('data-video');
-      
-            // Navigate to the corresponding video page
-            window.location.href = videoUrl;
-          });
+            card.addEventListener('click', function() {
+                // Get the data-video attribute value of the clicked image
+                const videoUrl = this.querySelector('img').getAttribute('data-video');
+    
+                // Navigate to the corresponding video page
+                window.location.href = videoUrl;
+            });
         });
-      </script>
+    </script>
+    
     
     </div>
   </section>
@@ -120,322 +148,494 @@
   
 
   <section id="discography">
+    <!-- Section for the discography -->
     <h2>Discography</h2>
+    <!-- Heading for the discography section -->
     <div class="album-container">
-      <a href="album1.html" class="album-link">
-        <div class="album-card">
-          <img src="album1.jpg" alt="Album 1">
-          <div class="album-details">
-            <h3 class="album-title">Album 1</h3>
-            <p>Release Date: January 1, 2022</p>
-          </div>     
-        </div>
-      </a>
-      <a href="album2.html" class="album-link">
-        <div class="album-card">
-          <img src="album2.webp" alt="Album 2">
-          <div class="album-details">
-            <h3 class="album-title">Album 2</h3>
-            <p>Release Date: February 15, 2023</p>
-          </div>
-        </div>
-      </a>
-      
+        <!-- Container for album cards -->
+        <a href="album1.html" class="album-link">
+            <!-- Link to album 1 -->
+            <div class="album-card">
+                <!-- Album card for album 1 -->
+                <img src="album1.jpg" alt="Album 1">
+                <!-- Image for album 1 -->
+                <div class="album-details">
+                    <!-- Details of album 1 -->
+                    <h3 class="album-title">Album 1</h3>
+                    <!-- Title of album 1 -->
+                    <p>Release Date: January 1, 2022</p>
+                    <!-- Release date of album 1 -->
+                </div>
+            </div>
+        </a>
+        <a href="album2.html" class="album-link">
+            <!-- Link to album 2 -->
+            <div class="album-card">
+                <!-- Album card for album 2 -->
+                <img src="album2.webp" alt="Album 2">
+                <!-- Image for album 2 -->
+                <div class="album-details">
+                    <!-- Details of album 2 -->
+                    <h3 class="album-title">Album 2</h3>
+                    <!-- Title of album 2 -->
+                    <p>Release Date: February 15, 2023</p>
+                    <!-- Release date of album 2 -->
+                </div>
+            </div>
+        </a>
     </div>
-  </section>
+</section>
+
   
-  
+<section id="upcoming-events">
+  <!-- Section for upcoming events -->
+  <h2>Upcoming Events</h2>
+  <!-- Heading for the upcoming events section -->
+  <div class="event-container">
+      <!-- Container for event items -->
+      <div class="event-item">
+          <!-- Event item 1 -->
+          <div class="event-thumbnail">
+              <!-- Thumbnail for event 1 -->
+              <img src="event1.jpg" alt="Concert 1">
+              <!-- Image for event 1 -->
+              <div class="event-overlay">
+                  <!-- Overlay for event 1 -->
+                  <div class="event-details">
+                      <!-- Details of event 1 -->
+                      <h3>Permission to Dance</h3>
+                      <!-- Title of event 1 -->
+                      <p>Date: [28 June, 2023]</p>
+                      <!-- Date of event 1 -->
+                      <p>Venue: [Olympic Stadium]</p>
+                      <!-- Venue of event 1 -->
+                  </div>
+                  <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+                  <!-- Button to buy tickets for event 1 -->
+              </div>
+          </div>
+      </div>
+      <div class="event-item">
+          <!-- Event item 2 -->
+          <div class="event-thumbnail">
+              <!-- Thumbnail for event 2 -->
+              <img src="event2.jpg" alt="Concert 2">
+              <!-- Image for event 2 -->
+              <div class="event-overlay">
+                  <!-- Overlay for event 2 -->
+                  <div class="event-details">
+                      <!-- Details of event 2 -->
+                      <h3>Mgic Shop</h3>
+                      <!-- Title of event 2 -->
+                      <p>Date: [30 Septemper, 2023]</p>
+                      <!-- Date of event 2 -->
+                      <p>Venue: [Sofi Stadium]</p>
+                      <!-- Venue of event 2 -->
+                  </div>
+                  <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+                  <!-- Button to buy tickets for event 2 -->
+              </div>
+          </div>
+      </div>
+      <div class="event-item">
+          <!-- Event item 3 -->
+          <div class="event-thumbnail">
+              <!-- Thumbnail for event 3 -->
+              <img src="event3.jpg" alt="Concert 2">
+              <!-- Image for event 3 -->
+              <div class="event-overlay">
+                  <!-- Overlay for event 3 -->
+                  <div class="event-details">
+                      <!-- Details of event 3 -->
+                      <h3>Permission to Dance</h3>
+                      <!-- Title of event 3 -->
+                      <p>Date: [17 December, 2023]</p>
+                      <!-- Date of event 3 -->
+                      <p>Venue: [Olympic Stadium]</p>
+                      <!-- Venue of event 3 -->
+                  </div>
+                  <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+                  <!-- Button to buy tickets for event 3 -->
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
 
  
   
-  <section id="upcoming-events">
-    <h2>Upcoming Events</h2>
-    <div class="event-container">
-      <div class="event-item">
-        <div class="event-thumbnail">
-          <img src="event1.jpg" alt="Concert 1">
-          <div class="event-overlay">
-            <div class="event-details">
-              <h3>Permission to Dance</h3>
-              <p>Date: [28 June, 2023]</p>
-              <p>Venue: [Olympic Stadium]</p>
-            </div>
-            <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+ 
+  
+  
+<section id="merchandise">
+  <!-- Section for merchandise -->
+  <h2>Merchandise</h2>
+  <!-- Heading for the merchandise section -->
+  <div class="merchandise-container">
+      <!-- Container for merchandise items -->
+      <div class="merchandise-item">
+          <!-- Merchandise item 1 -->
+          <div class="merchandise-thumbnail">
+              <!-- Thumbnail for merchandise 1 -->
+              <img src="merch1.jpg" alt="Merchandise 1">
+              <!-- Image for merchandise 1 -->
           </div>
-        </div>
-      </div>
-      <div class="event-item">
-        <div class="event-thumbnail">
-          <img src="event2.jpg" alt="Concert 2">
-          <div class="event-overlay">
-            <div class="event-details">
-              <h3>Mgic Shop</h3>
-              <p>Date: [30 Septemper, 2023]</p>
-              <p>Venue: [Sofi Stadium]</p>
-            </div>
-            <a href="ticket-page.html" class="event-button">Buy Tickets</a>
+          <div class="merchandise-details">
+              <!-- Details of merchandise 1 -->
+              <h3>Ptd Hoodie</h3>
+              <!-- Title of merchandise 1 -->
+              <p>Price: $19.99</p>
+              <!-- Price of merchandise 1 -->
+              <a href="merch1.html" class="buy-button">Buy Now</a>
+              <!-- Button to buy merchandise 1 -->
           </div>
-        </div>
       </div>
+      <div class="merchandise-item">
+          <!-- Merchandise item 2 -->
+          <div class="merchandise-thumbnail">
+              <!-- Thumbnail for merchandise 2 -->
+              <img src="merch2.jpg" alt="Merchandise 2">
+              <!-- Image for merchandise 2 -->
+          </div>
+          <div class="merchandise-details">
+              <!-- Details of merchandise 2 -->
+              <h3>Ptd Trouser</h3>
+              <!-- Title of merchandise 2 -->
+              <p>Price: $24.99</p>
+              <!-- Price of merchandise 2 -->
+              <a href="merch2.html" class="buy-button">Buy Now</a>
+              <!-- Button to buy merchandise 2 -->
+          </div>
+      </div>
+      <div class="merchandise-item">
+          <!-- Merchandise item 3 -->
+          <div class="merchandise-thumbnail">
+              <!-- Thumbnail for merchandise 3 -->
+              <img src="merch3.jpg" alt="Merchandise 3">
+              <!-- Image for merchandise 3 -->
+          </div>
+          <div class="merchandise-details">
+              <!-- Details of merchandise 3 -->
+              <h3>Ptd Shirt</h3>
+              <!-- Title of merchandise 3 -->
+              <p>Price: $14.99</p>
+              <!-- Price of merchandise 3 -->
+              <a href="merch3.html" class="buy-button">Buy Now</a>
+              <!-- Button to buy merchandise 3 -->
+          </div>
+      </div>
+      <div class="merchandise-item">
+          <!-- Merchandise item 4 -->
+          <div class="merchandise-thumbnail">
+              <!-- Thumbnail for merchandise 4 -->
+              <img src="merch4.jpg" alt="Merchandise 4">
+              <!-- Image for merchandise 4 -->
+          </div>
+          <div class="merchandise-details">
+              <!-- Details of merchandise 4 -->
+              <h3>Ptd Bag</h3>
+              <!-- Title of merchandise 4 -->
+              <p>Price: $10.99</p>
+              <!-- Price of merchandise 4 -->
+              <a href="merch4.html" class="buy-button">Buy Now</a>
+              <!-- Button to buy merchandise 4 -->
+          </div>
+      </div>
+  </div>
+</section>
 
-      <div class="event-item">
-        <div class="event-thumbnail">
-          <img src="event3.jpg" alt="Concert 2">
-          <div class="event-overlay">
-            <div class="event-details">
-              <h3>Permission to Dance</h3>
-              <p>Date: [17 December, 2023]</p>
-              <p>Venue: [Olympic Stadium]</p>
-            </div>
-            <a href="ticket-page.html" class="event-button">Buy Tickets</a>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </section>
-  
-  
-  <section id="merchandise">
-    <h2>Merchandise</h2>
-    <div class="merchandise-container">
-      <div class="merchandise-item">
-        <div class="merchandise-thumbnail">
-          <img src="merch1.jpg" alt="Merchandise 1">
-        </div>
-        <div class="merchandise-details">
-          <h3>Ptd Hoodie</h3>
-          <p>Price: $19.99</p>
-          <a href="merch1.html" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-      <div class="merchandise-item">
-        <div class="merchandise-thumbnail">
-          <img src="merch2.jpg" alt="Merchandise 2">
-        </div>
-        <div class="merchandise-details">
-          <h3>Ptd Trouser</h3>
-          <p>Price: $24.99</p>
-          <a href="merch2.html" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-      <div class="merchandise-item">
-        <div class="merchandise-thumbnail">
-          <img src="merch3.jpg" alt="Merchandise 3">
-        </div>
-        <div class="merchandise-details">
-          <h3>Ptd Shirt</h3>
-          <p>Price: $14.99</p>
-          <a href="merch3.html" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-      <div class="merchandise-item">
-        <div class="merchandise-thumbnail">
-          <img src="merch4.jpg" alt="Merchandise 3">
-        </div>
-        <div class="merchandise-details">
-          <h3>Ptd Bag</h3>
-          <p>Price: $10.99</p>
-          <a href="merch4.html" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
    
-    </div>
-  </section>
+    
   
-  <section id="song-lyrics">
-    <h2>Song Lyrics</h2>
-    <div class="lyrics-container">
+<section id="song-lyrics">
+  <!-- Section for song lyrics -->
+  <h2>Song Lyrics</h2>
+  <!-- Heading for the song lyrics section -->
+  <div class="lyrics-container">
+      <!-- Container for song lyrics items -->
       <div class="lyrics-item">
-        <img src="lyrics1.jpg" alt="Song Lyrics 1">
-        <a href="lyrics1.html" class="play-button"></a>
+          <!-- Song lyrics item 1 -->
+          <img src="lyrics1.jpg" alt="Song Lyrics 1">
+          <!-- Image for song lyrics 1 -->
+          <a href="lyrics1.html" class="play-button"></a>
+          <!-- Button to play song lyrics 1 -->
       </div>
       <div class="lyrics-item">
-        <img src="lyrics2.jpg" alt="Song Lyrics 2">
-        <a href="lyrics2.html" class="play-button"></a>
+          <!-- Song lyrics item 2 -->
+          <img src="lyrics2.jpg" alt="Song Lyrics 2">
+          <!-- Image for song lyrics 2 -->
+          <a href="lyrics2.html" class="play-button"></a>
+          <!-- Button to play song lyrics 2 -->
       </div>
       <div class="lyrics-item">
-        <img src="lyrics3.jpg" alt="Song Lyrics 3">
-        <a href="lyrics3.html" class="play-button"></a>
+          <!-- Song lyrics item 3 -->
+          <img src="lyrics3.jpg" alt="Song Lyrics 3">
+          <!-- Image for song lyrics 3 -->
+          <a href="lyrics3.html" class="play-button"></a>
+          <!-- Button to play song lyrics 3 -->
       </div>
-
       <div class="lyrics-item">
-        <img src="lyrics4.jpg" alt="Song Lyrics 3">
-        <a href="lyrics4.html" class="play-button"></a>
+          <!-- Song lyrics item 4 -->
+          <img src="lyrics4.jpg" alt="Song Lyrics 4">
+          <!-- Image for song lyrics 4 -->
+          <a href="lyrics4.html" class="play-button"></a>
+          <!-- Button to play song lyrics 4 -->
       </div>
-
       <div class="lyrics-item">
-        <img src="lyrics5.png" alt="Song Lyrics 3">
-        <a href="lyrics5.html" class="play-button"></a>
+          <!-- Song lyrics item 5 -->
+          <img src="lyrics5.png" alt="Song Lyrics 5">
+          <!-- Image for song lyrics 5 -->
+          <a href="lyrics5.html" class="play-button"></a>
+          <!-- Button to play song lyrics 5 -->
       </div>
-     
-    </div>
-  </section>
- 
-  
-  <section id="testimonials">
-    <h2>BTS Fan Reviews</h2>
-    <div class="testimonial-container">
-      <div class="testimonial-item">
-        <div class="testimonial-content">
-          <p>"What sets BTS apart from other bands is their pride in being Korean. As an Asian, I find this inspiring.They proudly speak Korean during important award speeches (like their UN speech), wear hanbok (traditional Korean dress) and promote Korean culture. "</p>
-          <p class="testimonial-author">- John Doe</p>
-        </div>
-      </div>
-      <div class="testimonial-item">
-        <div class="testimonial-content">
-          <p>"I became a fan when I heard their song Dynamite on a Spotify 2010s playlist in June this year. I was demotivated with work and felt isolated during the pandemic.It was my first time hearing BTS or K-pop; I was surprised that Dynamite was in English and sounded like a Bruno Mars song."</p>
-          <p class="testimonial-author">- Jane Smith</p>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  
-  
-  
+  </div>
+</section>
 
  
   
+<section id="testimonials">
+  <!-- Section for BTS fan reviews -->
+  <h2>BTS Fan Reviews</h2>
+  <!-- Heading for the BTS fan reviews section -->
+  <div class="testimonial-container">
+      <!-- Container for testimonial items -->
+      <div class="testimonial-item">
+          <!-- Testimonial item 1 -->
+          <div class="testimonial-content">
+              <!-- Testimonial content for item 1 -->
+              <p>"What sets BTS apart from other bands is their pride in being Korean. As an Asian, I find this inspiring. They proudly speak Korean during important award speeches (like their UN speech), wear hanbok (traditional Korean dress) and promote Korean culture. "</p>
+              <!-- Testimonial quote for item 1 -->
+              <p class="testimonial-author">- John Doe</p>
+              <!-- Author of the testimonial for item 1 -->
+          </div>
+      </div>
+      <div class="testimonial-item">
+          <!-- Testimonial item 2 -->
+          <div class="testimonial-content">
+              <!-- Testimonial content for item 2 -->
+              <p>"I became a fan when I heard their song Dynamite on a Spotify 2010s playlist in June this year. I was demotivated with work and felt isolated during the pandemic. It was my first time hearing BTS or K-pop; I was surprised that Dynamite was in English and sounded like a Bruno Mars song."</p>
+              <!-- Testimonial quote for item 2 -->
+              <p class="testimonial-author">- Jane Smith</p>
+              <!-- Author of the testimonial for item 2 -->
+          </div>
+      </div>
+  </div>
+</section>
+
   
-  <section id="news-events">
-    <h2>BTS Updates</h2>
-    <div class="news-events-container">
+  
+
+ 
+  
+  
+<section id="news-events">
+  <!-- Section for BTS updates -->
+  <h2>BTS Updates</h2>
+  <!-- Heading for the BTS updates section -->
+  <div class="news-events-container">
+      <!-- Container for news items -->
       <div class="news-item">
-        <img src="article1.jpg" alt="News 1">
-        <div class="news-info">
-          <h3>News Title 1</h3>
-          <p>BTS V x Celine Show</p>
-          <a href="article1.html" class="read-more-button">Read More</a>
-        </div>
+          <!-- News item 1 -->
+          <img src="article1.jpg" alt="News 1">
+          <!-- Image for news item 1 -->
+          <div class="news-info">
+              <!-- News information for item 1 -->
+              <h3>News Title 1</h3>
+              <!-- Title of news item 1 -->
+              <p>BTS V x Celine Show</p>
+              <!-- Description of news item 1 -->
+              <a href="article1.html" class="read-more-button">Read More</a>
+              <!-- "Read More" link for news item 1 -->
+          </div>
       </div>
       <div class="news-item">
-        <img src="article2.webp" alt="News 2">
-        <div class="news-info">
-          <h3>News Title 2</h3>
-          <p>Dynamite is reaching new heights</p>
-          <a href="article2.html" class="read-more-button">Read More</a>
-        </div>
+          <!-- News item 2 -->
+          <img src="article2.webp" alt="News 2">
+          <!-- Image for news item 2 -->
+          <div class="news-info">
+              <!-- News information for item 2 -->
+              <h3>News Title 2</h3>
+              <!-- Title of news item 2 -->
+              <p>Dynamite is reaching new heights</p>
+              <!-- Description of news item 2 -->
+              <a href="article2.html" class="read-more-button">Read More</a>
+              <!-- "Read More" link for news item 2 -->
+          </div>
       </div>
-      
-    </div>
-  </section>
+  </div>
+</section>
+
   
   
-  
-  
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="photo-container">
+<section id="gallery">
+  <!-- Section for the gallery -->
+  <h2>Gallery</h2>
+  <!-- Heading for the gallery section -->
+  <div class="photo-container">
+      <!-- Container for photo cards -->
       <div class="photo-card">
-        <img src="image1.jpg" alt="Photo 1">
-        <a href="image1.jpg" download class="download-button">&#x2B07;</a>
+          <!-- Photo card 1 -->
+          <img src="image1.jpg" alt="Photo 1">
+          <!-- Image for photo card 1 -->
+          <a href="image1.jpg" download class="download-button">&#x2B07;</a>
+          <!-- Download button for photo card 1 -->
       </div>
       <div class="photo-card">
-        <img src="image2.webp" alt="Photo 2">
-        <a href="image2.webp" download class="download-button">&#x2B07;</a>
+          <!-- Photo card 2 -->
+          <img src="image2.webp" alt="Photo 2">
+          <!-- Image for photo card 2 -->
+          <a href="image2.webp" download class="download-button">&#x2B07;</a>
+          <!-- Download button for photo card 2 -->
       </div>
 
       <div class="photo-card">
-        <img src="image3.webp" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image3.webp" alt="Photo 3">
+           <!-- Image for photo card 3 -->
         <a href="image3.webp" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 3 -->
       </div>
 
       
       <div class="photo-card">
-        <img src="image4.jpg" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image4.jpg" alt="Photo 4">
+           <!-- Image for photo card 4 -->
         <a href="image4.jpg" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 4 -->
       </div>
 
       <div class="photo-card">
-        <img src="image5.webp" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image5.webp" alt="Photo 5">
+           <!-- Image for photo card 2 -->
         <a href="image5.webp" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 5 -->
       </div>
 
       <div class="photo-card">
-        <img src="image6.jpeg" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image6.jpeg" alt="Photo 6">
+           <!-- Image for photo card 6 -->
         <a href="image6.jpeg" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 6 -->
       </div>
 
       <div class="photo-card">
-        <img src="image7.jpg" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image7.jpg" alt="Photo 7">
+           <!-- Image for photo card 7 -->
         <a href="image7.jpg" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 7 -->
       </div>
 
       <div class="photo-card">
-        <img src="image8.jpeg" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image8.jpeg" alt="Photo 8">
+           <!-- Image for photo card 8 -->
         <a href="image8.jpeg" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 8 -->
       </div>
 
       <div class="photo-card">
+         <!-- Photo card 2 -->
         <img src="image9.jpg" alt="Photo 2">
+           <!-- Image for photo card 9 -->
         <a href="image9.jpg" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 9 -->
       </div>
     
       <div class="photo-card">
-        <img src="image10.webp" alt="Photo 2">
+         <!-- Photo card 2 -->
+        <img src="image10.webp" alt="Photo 10">
+           <!-- Image for photo card 10 -->
         <a href="image10.webp" download class="download-button">&#x2B07;</a>
+        <!-- Download button for photo card 10 -->
       </div>
       
     </div>
   </section>
   
   <section id="charity">
+    <!-- Section for charity work -->
     <h2>Charity Work</h2>
+    <!-- Heading for the charity section -->
     <div class="charity-grid">
-      <div class="charity-card">
-        <img src="project1.png" alt="Charity 1">
-        <h3>Project 1</h3>
-        <p>Love Myself Campaign: In partnership with the Korean Committee for UNICEF, BTS launched the "Love Myself" campaign in 2017. The campaign aimed to combat violence against children and teens, and promote self-esteem and love. </p>
-
-        </p>
-      </div>
-      <div class="charity-card">
-        <img src="project2.jpg" alt="Charity 2">
-        <h3>Project 2</h3>
-        <p>Green Umbrella Children's Foundation: BTS has also made contributions to the Green Umbrella Children's Foundation, a South Korean organization that supports underprivileged children. They have donated funds to provide scholarships and educational opportunities for children in need.</p>
-      </div>
-      <div class="charity-card">
-        <img src="project3.webp" alt="Charity 3">
-        <h3>Project 3</h3>
-        <p>Korean Animal Welfare Association: BTS members have individually expressed their love for animals and supported organizations promoting animal welfare. They have made personal donations to organizations like the Korean Animal Welfare Association, which works to protect and care for animals in need.</p>
-      </div>
-     
+        <!-- Grid container for charity cards -->
+        <div class="charity-card">
+            <!-- Charity card 1 -->
+            <img src="project1.png" alt="Charity 1">
+            <!-- Image for charity card 1 -->
+            <h3>Project 1</h3>
+            <!-- Title for charity card 1 -->
+            <p>Love Myself Campaign: In partnership with the Korean Committee for UNICEF, BTS launched the "Love Myself" campaign in 2017. The campaign aimed to combat violence against children and teens, and promote self-esteem and love. </p>
+            <!-- Description for charity card 1 -->
+        </div>
+        <div class="charity-card">
+            <!-- Charity card 2 -->
+            <img src="project2.jpg" alt="Charity 2">
+            <!-- Image for charity card 2 -->
+            <h3>Project 2</h3>
+            <!-- Title for charity card 2 -->
+            <p>Green Umbrella Children's Foundation: BTS has also made contributions to the Green Umbrella Children's Foundation, a South Korean organization that supports underprivileged children. They have donated funds to provide scholarships and educational opportunities for children in need.</p>
+            <!-- Description for charity card 2 -->
+        </div>
+        <div class="charity-card">
+            <!-- Charity card 3 -->
+            <img src="project3.webp" alt="Charity 3">
+            <!-- Image for charity card 3 -->
+            <h3>Project 3</h3>
+            <!-- Title for charity card 3 -->
+            <p>Korean Animal Welfare Association: BTS members have individually expressed their love for animals and supported organizations promoting animal welfare. They have made personal donations to organizations like the Korean Animal Welfare Association, which works to protect and care for animals in need.</p>
+            <!-- Description for charity card 3 -->
+        </div>
     </div>
-  </section>
+</section>
+
   
 
 
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <div class="contact-container">
+<section id="contact">
+  <!-- Section for contact information -->
+  <h2>Contact Us</h2>
+  <!-- Heading for the contact section -->
+  <div class="contact-container">
+      <!-- Container for contact form -->
       <div class="contact-form">
-        <h3>Send Message</h3>
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          </div>
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
+          <!-- Contact form -->
+          <h3>Send Message</h3>
+          <!-- Heading for the contact form -->
+          <form>
+              <!-- Form for submitting a message -->
+              <div class="form-group">
+                  <!-- Form group for name field -->
+                  <label for="name">Your Name</label>
+                  <!-- Label for name field -->
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  <!-- Input field for name -->
+              </div>
+              <div class="form-group">
+                  <!-- Form group for email field -->
+                  <label for="email">Your Email</label>
+                  <!-- Label for email field -->
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  <!-- Input field for email -->
+              </div>
+              <div class="form-group">
+                  <!-- Form group for message field -->
+                  <label for="message">Your Message</label>
+                  <!-- Label for message field -->
+                  <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                  <!-- Textarea field for message -->
+              </div>
+              <button type="submit">Send Message</button>
+              <!-- Submit button for sending the message -->
+          </form>
       </div>
-    </div>
-  </section>
-  
-  
+  </div>
+</section>
+
   
   
     
@@ -444,28 +644,43 @@
       
      
   
-  <footer>
-    <div class="footer-container">
+<footer>
+  <!-- Footer section -->
+  <div class="footer-container">
+      <!-- Container for footer content -->
       <div class="logo">
-        <img src="https://wallpapers.com/images/hd/bts-debut-logo-ad2anrg0uuiwh2jz.jpg" alt="Logo">
+          <!-- Logo -->
+          <img src="https://wallpapers.com/images/hd/bts-debut-logo-ad2anrg0uuiwh2jz.jpg" alt="Logo">
+          <!-- Logo image -->
       </div>
       <div class="footer-links">
-        <ul>
-        <li><a href="About.html">About</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="lyrics1.html">Popular Song</a></li>
-        <li><a href="album1.html">Discography</a></li>
-        <li><a href="ticket-page.html">Ticket</a></li>
-        </ul>
+          <!-- Footer links -->
+          <ul>
+              <!-- List of links -->
+              <li><a href="About.html">About</a></li>
+              <!-- About link -->
+              <li><a href="members.html">Members</a></li>
+              <!-- Members link -->
+              <li><a href="lyrics1.html">Popular Song</a></li>
+              <!-- Popular Song link -->
+              <li><a href="album1.html">Discography</a></li>
+              <!-- Discography link -->
+              <li><a href="ticket-page.html">Ticket</a></li>
+              <!-- Ticket link -->
+          </ul>
       </div>
       <div class="social-icons">
-        <a href="https://www.facebook.com/bangtan.official?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/BTSW_official?t=uwHuENujdM0J94o-rRBA3Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com/bts.bighitofficial?igshid=MmJiY2I4NDBkZg==" target="_blank"><i class="fab fa-instagram"></i></a>
-       
+          <!-- Social media icons -->
+          <a href="https://www.facebook.com/bangtan.official?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook"></i></a>
+          <!-- Facebook icon -->
+          <a href="https://twitter.com/BTSW_official?t=uwHuENujdM0J94o-rRBA3Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+          <!-- Twitter icon -->
+          <a href="https://instagram.com/bts.bighitofficial?igshid=MmJiY2I4NDBkZg==" target="_blank"><i class="fab fa-instagram"></i></a>
+          <!-- Instagram icon -->
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
+
   
   
     
