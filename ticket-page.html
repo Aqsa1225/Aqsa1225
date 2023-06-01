@@ -10,46 +10,49 @@
     
        
 <body>
-    <header>
-        <nav>
-            <div class="logo">BTS</div>
-            <ul class="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li><a href="members.html">Members</a></li>
-              <li><a href="album1.html">Discography</a></li>
-              <li><a href="lyrics1.html">Popular Song</a></li>
-              
-            </ul>
-        </nav>
-        <h1>Ticket Purchase</h1>
-    </header>
-    <main>
-        
-            <div class="ticket-container">
-                <div class="ticket-image">
-                  <img src="ticket-page.webp" alt="Ticket Image">
-                </div>
-                <div class="ticket-details">
-                  <h2>Concert Ticket</h2>
-                  <p>Date: May 30, 2023</p>
-                  <p>Location: Concert Hall</p>
-                  <p>Price: $50</p>
-                  <div class="ticket-form">
-                    <h3>Fill in your details</h3>
-                    <form id="ticket-form">
-                      <label for="name">Name:</label>
-                      <input type="text" id="name" required>
-                      <label for="email">Email:</label>
-                      <input type="email" id="email" required>
-                      <label for="quantity">Quantity:</label>
-                      <input type="number" id="quantity" min="1" max="10" required>
-                      <input type="submit" value="Purchase Ticket">
-                    </form>
-                    <p id="message">Thank you for purchasing!</p>
-                  </div>
-                </div>
-              </div>
+  <header>
+    <!-- Header section with logo and navigation -->
+    <nav>
+        <div class="logo">BTS</div> <!-- Logo -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li> <!-- Navigation links -->
+            <li><a href="About.html">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="album1.html">Discography</a></li>
+            <li><a href="lyrics1.html">Popular Song</a></li>
+        </ul>
+    </nav>
+    <h1>Ticket Purchase</h1> <!-- Heading -->
+</header>
+
+<main>
+    <!-- Main section with ticket details and form -->
+    <div class="ticket-container">
+        <div class="ticket-image">
+            <img src="ticket-page.webp" alt="Ticket Image"> <!-- Ticket image -->
+        </div>
+        <div class="ticket-details">
+            <h2>Concert Ticket</h2> <!-- Ticket title -->
+            <p>Date: May 30, 2023</p> <!-- Ticket details -->
+            <p>Location: Concert Hall</p>
+            <p>Price: $50</p>
+            <div class="ticket-form">
+                <h3>Fill in your details</h3> <!-- Form title -->
+                <form id="ticket-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required> <!-- Input field for name -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required> <!-- Input field for email -->
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" max="10" required> <!-- Input field for quantity -->
+                    <input type="submit" value="Purchase Ticket"> <!-- Submit button -->
+                </form>
+                <p id="message">Thank you for purchasing!</p> <!-- Message displayed after form submission -->
+            </div>
+        </div>
+    </div>
+</main>
+
               
 
               <footer>

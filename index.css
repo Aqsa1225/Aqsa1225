@@ -1,865 +1,947 @@
+/* Reset styles for all elements */
+
+/* Set margin and padding to 0 and use border-box for box sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ff99ff 0%, #ccffcc 100%);
-  }
-  
-  header {
-    background-color: #000000;
-    padding: 20px;
-    color: #fff;
-    position: relative;
-  }
-  
-  .bts {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 25px;
-  }
-  
-  .bts h1 {
-    font-size: 38px;
-    font-weight: bold;
-  }
-  
-  .bts p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
-  .bts .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f35106;
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 10px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  h1 {
-    font-size: 28px;
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  #video-page {
-    margin-top: 20px;
-  }
-  
-  video {
-    width: 100%;
-    height: auto;
-  }
-  
-  
-  /* Music videos section styles */
+/* Global styles */
+
+/* Set the font family and background gradient for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff99ff 0%, #ccffcc 100%);
+}
+
+/* Header styles */
+
+/* Style the header section with a black background, padding, and white text */
+header {
+  background-color: #000000;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+
+/* BTS section styles */
+
+/* Style the BTS section */
+.bts {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 25px;
+}
+
+/* Style the BTS section heading */
+.bts h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/* Style the BTS section paragraph */
+.bts p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Style the BTS section button */
+.bts .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f35106;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+/* Navigation styles */
+
+/* Style the navigation bar */
+
+/* Make the navigation bar a flex container and adjust alignment */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo */
+
+/* Set the font size and weight for the logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+
+/* Remove the bullet points and display the links horizontally */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+/* Add margin to the right of each navigation link */
+.nav-links li {
+  margin-right: 10px;
+}
+
+/* Style the link text */
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Additional styles */
+
+/* Style the heading */
+h1 {
+  font-size: 28px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Style the video page container */
+#video-page {
+  margin-top: 20px;
+}
+
+/* Style the video */
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Music Videos section styles */
+
+/* Set the background color and padding for the music videos section */
 #music-videos {
-    background-color: #f2f2f2;
-    padding: 50px;
-  }
-  
-  .video-gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .video-card {
-    position: relative;
-    width: 250px;
-    height: 150px;
-    margin: 10px;
-    overflow: hidden;
-  }
-  
-  .video-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .video-overlay i {
-    color: #fff;
-    font-size: 48px;
-    cursor: pointer;
-  }
-  
-  .video-card:hover .video-overlay {
-    opacity: 1;
-  }
-  
-  #discography {
-    text-align: center;
-    padding: 50px;
-  }
-  
-  #discography h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .album-link {
-    text-decoration: none;
-  }
-  
-  .album-link:hover {
-    text-decoration: none;
-  }
-  
-  .album-link:focus {
-    text-decoration: none;
-  }
-  
-  .album-link:active {
-    text-decoration: none;
-  }
-  
-  .album-title {
-    color: #000;
-    /* Add any desired styling for the album title */
-  }
-  
-  
-  .album-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .album-card {
-    width: 300px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .album-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .album-card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .album-details {
-    padding: 10px;
-  }
-  
-  .album-details h3 {
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .album-details p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  
-  .buttons {
-    margin-top: 16px;
-  }
-  
-  .play-button,
-  .info-button {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-right: 8px;
-    border-radius: 4px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  
-  .play-button:hover,
-  .info-button:hover {
-    background-color: #555;
-  }
-  
-  
-  
-  /* Rest of your CSS styles for the discography section */
-  
-  
-  
-  .slide-content h3 {
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  
-  .slide-content p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .buttons {
-    margin-top: 20px;
-  }
-  
-  .play-button,
-  .info-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff5c00;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .play-button:hover,
-  .info-button:hover {
-    background-color: #ff8100;
-  }
-  
+  background-color: #f2f2f2;
+  padding: 50px;
+}
 
+/* Video Gallery styles */
 
-  
+/* Display the video gallery as a flex container */
+.video-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .video-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  }
-  
-  .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+/* Video Card styles */
 
-  
-  
-  
-  
-  
-  
+/* Set the position, dimensions, margin, and overflow for the video card */
+.video-card {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  margin: 10px;
+  overflow: hidden;
+}
 
- 
-  
-  
-  
+/* Set the dimensions and cover the image within the video card */
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
- 
-  
-  
-  #upcoming-events {
-    padding: 40px 0;
-  }
-  
-  #upcoming-events h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .event-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .event-item {
-    position: relative;
-    width: 300px;
-    height: 200px;
-    margin: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  
-  .event-thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .event-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: opacity 0.3s ease;
-  }
-  
-  .event-item:hover .event-overlay {
-    opacity: 1;
-  }
-  
-  .event-details {
-    text-align: center;
-    color: #fff;
-  }
-  
-  .event-details h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .event-details p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  
-  .event-button {
-    display: inline-block;
-    padding: 8px 20px;
-    background-color: #ee6d03;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .event-button:hover {
-    background-color: #19b6ff;
-  }
-  
-  
+/* Video Overlay styles */
 
+/* Position the video overlay at the top left corner with full width and height */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Set the color, size, and cursor for the video overlay icon */
+.video-overlay i {
+  color: #fff;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+/* Show the video overlay when hovering over the video card */
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+/* Discography section styles */
+
+/* Center align the content and set padding for the discography section */
+#discography {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Discography heading styles */
+
+/* Set the font size and margin for the discography heading */
+#discography h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Album link styles */
+
+/* Remove text decoration for the album link */
+.album-link {
+  text-decoration: none;
+}
+
+/* Album link styles on hover, focus, and active */
+
+/* Remove text decoration for the album link on hover, focus, and active states */
+.album-link:hover,
+.album-link:focus,
+.album-link:active {
+  text-decoration: none;
+}
+
+/* Album title styles */
+
+/* Set the color for the album title */
+.album-title {
+  color: #000;
+  /* Add any desired styling for the album title */
+}
+
+/* Album Container styles */
+
+/* Display the album container as a flex container and center align the content */
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Album Card styles */
+
+/* Set the width, margin, box shadow, and transition for the album card */
+.album-card {
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Apply a translateY transformation on hover to create a lift effect */
+.album-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Album Card Image styles */
+
+/* Set the width and auto height for the album card image */
+.album-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Album Details styles */
+
+/* Set padding for the album details */
+.album-details {
+  padding: 10px;
+}
   
-  #merchandise {
-    padding: 40px 0;
-  }
-  
-  #merchandise h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .merchandise-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-  .merchandise-item {
-    width: 200px;
-    margin: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-  }
-  
-  .merchandise-thumbnail img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .merchandise-details h3 {
-    font-size: 18px;
-    margin: 10px 0;
-  }
-  
-  .merchandise-details p {
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .buy-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  .buy-button:hover {
-    background-color: #29b4df;
-  }
-  
-  .merchandise-item:hover {
-    transform: scale(1.05);
-  }
-  
-  #gallery {
-    padding: 40px;
-    background-color: #f9f9f9;
-  }
-  
-  #gallery h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .photo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .photo-card {
-    position: relative;
-    width: 200px;
-    height: 200px;
-  }
-  
-  .photo-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-  }
-  
-  .photo-card:hover img {
-    transform: scale(1.1);
-  }
-  
-  .download-button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: #656666;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .download-button:hover {
-    background-color: #12c4db;
-  }
-  
+  /* Album Details heading styles */
+.album-details h3 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Album Details paragraph styles */
+.album-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Buttons section styles */
+.buttons {
+  margin-top: 16px;
+}
+
+/* Play and Info Button styles */
+.play-button,
+.info-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Hover styles for Play and Info Buttons */
+.play-button:hover,
+.info-button:hover {
+  background-color: #555;
+}
+
+ /* Slide content heading styles */
+.slide-content h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Slide content paragraph styles */
+.slide-content p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Buttons section styles */
+.buttons {
+  margin-top: 20px;
+}
+
+/* Play and Info Button styles */
+.play-button,
+.info-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5c00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover styles for Play and Info Buttons */
+.play-button:hover,
+.info-button:hover {
+  background-color: #ff8100;
+}
+
+/* Video container styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Upcoming events section styles */
+#upcoming-events {
+  padding: 40px 0;
+}
+
+#upcoming-events h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.event-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.event-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease;
+}
+
+.event-item:hover .event-overlay {
+  opacity: 1;
+}
+
+.event-details {
+  text-align: center;
+  color: #fff;
+}
+
+.event-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.event-details p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.event-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #ee6d03;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.event-button:hover {
+  background-color: #19b6ff;
+}
 
   
-  #testimonials {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-    text-align: center;
-  }
   
-  .testimonial-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
+ /* Merchandise section styles */
+#merchandise {
+  padding: 40px 0;
+}
+
+#merchandise h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.merchandise-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.merchandise-item {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.merchandise-thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.merchandise-details h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.merchandise-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+  background-color: #29b4df;
+}
+
+.merchandise-item:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery section styles */
+#gallery {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+#gallery h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo-card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.1);
+}
+
+.download-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #656666;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #12c4db;
+}
+
+#testimonials {
+  background-color: #f9f9f9; /* Sets the background color to #f9f9f9 */
+  padding: 50px 0; /* Adds padding of 50 pixels on the top and bottom, and 0 pixels on the left and right */
+  text-align: center; /* Aligns the content in the center horizontally */
+}
+
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the testimonial items horizontally */
+}
+
+.testimonial-item {
+  width: 320px; /* Sets the width of the testimonial item to 320 pixels */
+  margin: 20px; /* Adds margin of 20 pixels around the testimonial item */
+  padding: 20px; /* Adds padding of 20 pixels inside the testimonial item */
+  background-color: #fdfdfd; /* Sets the background color to #fdfdfd */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a box shadow effect */
+  text-align: center; /* Aligns the content in the center horizontally */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect on transform property */
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05); /* Scales up the testimonial item on hover */
+}
+
+.testimonial-content {
+  margin-bottom: 20px; /* Adds margin of 20 pixels at the bottom of the testimonial content */
+}
+
+.testimonial-content p {
+  font-size: 16px; /* Sets the font size to 16 pixels */
+  line-height: 1.6; /* Sets the line height to 1.6 */
+}
+
+.testimonial-author {
+  font-weight: bold; /* Sets the font weight to bold */
+  margin-top: 10px; /* Adds margin of 10 pixels at the top of the testimonial author */
+}
+
+@media screen and (max-width: 768px) {
   .testimonial-item {
-    width: 320px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fdfdfd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
+    width: 100%; /* Sets the width of the testimonial item to 100% */
+    max-width: 400px; /* Sets the maximum width of the testimonial item to 400 pixels */
   }
-  
-  .testimonial-item:hover {
-    transform: scale(1.05);
-  }
-  
-  .testimonial-content {
-    margin-bottom: 20px;
-  }
-  
-  .testimonial-content p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .testimonial-author {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .testimonial-item {
-      width: 100%;
-      max-width: 400px;
-    }
-  }
-  
-  #song-lyrics {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  #song-lyrics h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .lyrics-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .lyrics-item {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .lyrics-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-  }
-  
-  .lyrics-item:hover img {
-    transform: scale(1.1);
-  }
-  
-  .play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  
-  .lyrics-item:hover .play-button {
-    display: block;
-  }
-  
-  .play-button:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-top: 14px solid transparent;
-    border-bottom: 14px solid transparent;
-    border-left: 20px solid #000;
-  }
-  
-  .lyrics-item a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
+}
 
-  #news-events {
-    padding: 40px;
-    background-color: #f9f9f9;
-  }
-  
-  #news-events h2 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #000000;
-  }
-  
-  .news-events-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .news-item {
-    width: 300px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .news-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .news-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .news-info {
-    padding: 20px;
-  }
-  
-  .news-info h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .news-info p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-  }
-  
-  .read-more-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff7b00;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .read-more-button:hover {
-    background-color: #04cdff;
-  }
-  
-  
-  
-  
-  #contact {
-    text-align: center;
-    padding: 80px 0;
-  }
-  
-  #contact h2 {
-    font-size: 40px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #1d1c1c;
-  }
-  
-  .contact-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-form {
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #f5f5f5;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  .contact-form:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .contact-form h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #131212;
-    font-family: Arial, sans-serif;
-  }
-  
-  .contact-form form .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .contact-form form label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #0f0f0f;
-    font-family: Arial, sans-serif;
-  }
-  
-  .contact-form form input,
-  .contact-form form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form form input:focus,
-  .contact-form form textarea:focus {
-    background-color: #eee;
-  }
-  
-  .contact-form form input {
-    height: 40px;
-  }
-  
-  .contact-form form textarea {
-    height: 120px;
-  }
-  
-  .contact-form form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #eb650d;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form form button:hover {
-    background-color: #279eff;
-  }
-  
+#song-lyrics {
+  text-align: center; /* Aligns the content in the center horizontally */
+  padding: 20px; /* Adds padding of 20 pixels inside the song lyrics section */
+}
 
-  footer {
-    background-color: #000000;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .logo img {
-    height: 40px;
-  }
-  
-  .footer-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .footer-links ul li {
-    margin-right: 20px;
-  }
-  
-  .footer-links ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links ul li a:hover {
-    color: #1286f3;
-  }
-  
-  .social-media a {
-    display: inline-block;
-    margin-left: 10px;
-    transition: opacity 0.3s ease;
-  }
-  
-  .social-media a img {
-    width: 25px;
-    height: 25px;
-  }
-  
-  .social-media a:hover {
-    opacity: 0.7;
-  }
-  
+#song-lyrics h2 {
+  font-size: 24px; /* Sets the font size to 24 pixels */
+  margin-bottom: 10px; /* Adds margin of 10 pixels at the bottom of the heading */
+}
 
-/* Font Awesome Icons */
+.lyrics-container {
+  display: flex;
+  justify-content: center; /* Centers the lyrics items horizontally */
+  align-items: center; /* Centers the lyrics items vertically */
+  flex-wrap: wrap; /* Allows the lyrics items to wrap to the next line */
+  gap: 20px; /* Adds a gap of 20 pixels between the lyrics items */
+}
+
+.lyrics-item {
+  position: relative;
+  width: 200px; /* Sets the width of the lyrics item to 200 pixels */
+  height: 200px; /* Sets the height of the lyrics item to 200 pixels */
+  overflow: hidden; /* Hides any overflowing content inside the lyrics item */
+}
+
+.lyrics-item img {
+  width: 100%; /* Sets the width of the image to 100% of the lyrics item */
+  height: 100%; /* Sets the height of the image to 100% of the lyrics item */
+  object-fit: cover; /* Scales and crops the image to cover the entire lyrics item */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect on transform property */
+}
+
+.lyrics-item:hover img {
+  transform: scale(1.1); /* Scales up the image on hover */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the play button horizontally and vertically */
+  display: none; /* Hides the play button by default */
+  width: 60px; /* Sets the width of the play button to 60 pixels */
+  height: 60px; /* Sets the height of the play button to 60 pixels */
+  background-color: rgba(255, 255, 255, 0.7); /* Sets the background color with transparency */
+  border-radius: 50%; /* Makes the play button circular */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+}
+
+.lyrics-item:hover .play-button {
+  display: block; /* Shows the play button on hover */
+}
+
+.play-button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the play icon inside the button */
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent; /* Creates the triangle shape for the play icon */
+  border-bottom: 14px solid transparent; /* Creates the triangle shape for the play icon */
+  border-left: 20px solid #000; /* Creates the triangle shape for the play icon with black color */
+}
+
+.lyrics-item a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Positions the link above the image and play button */
+}
+
+  /* Styling for the news-events section */
+#news-events {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the heading within the news-events section */
+#news-events h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Styling for the container that holds the news items */
+.news-events-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Styling for each individual news item */
+.news-item {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for news items */
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for the image within the news item */
+.news-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Styling for the information within the news item */
+.news-info {
+  padding: 20px;
+}
+
+/* Styling for the title within the news item */
+.news-info h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Styling for the content within the news item */
+.news-info p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styling for the "Read More" button */
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff7b00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the "Read More" button */
+.read-more-button:hover {
+  background-color: #04cdff;
+}
+
+
+  
+  
+  /* Styling for the contact section */
+#contact {
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* Styling for the heading within the contact section */
+#contact h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #1d1c1c;
+}
+
+/* Styling for the container that holds the contact form */
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the contact form */
+.contact-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the contact form */
+.contact-form:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the heading within the contact form */
+.contact-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #131212;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the form groups within the contact form */
+.contact-form form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Styling for the labels within the contact form */
+.contact-form form label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #0f0f0f;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the input fields and text area within the contact form */
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the input fields and text area when focused within the contact form */
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  background-color: #eee;
+}
+
+/* Styling for the input fields within the contact form */
+.contact-form form input {
+  height: 40px;
+}
+
+/* Styling for the text area within the contact form */
+.contact-form form textarea {
+  height: 120px;
+}
+
+/* Styling for the submit button within the contact form */
+.contact-form form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #eb650d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button within the contact form */
+.contact-form form button:hover {
+  background-color: #279eff;
+}
+
+  /* Styling for the footer section */
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+}
+
+/* Styling for the container that holds the footer content */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for the logo within the footer */
+.logo img {
+  height: 40px;
+}
+
+/* Styling for the footer links */
+.footer-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling for each individual footer link item */
+.footer-links ul li {
+  margin-right: 20px;
+}
+
+/* Styling for the anchor tags within the footer links */
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for the anchor tags within the footer links */
+.footer-links ul li a:hover {
+  color: #1286f3;
+}
+
+/* Styling for the social media icons */
+.social-media a {
+  display: inline-block;
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
+}
+
+/* Styling for the images within the social media icons */
+.social-media a img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Hover effect for the social media icons */
+.social-media a:hover {
+  opacity: 0.7;
+}
+
+/* Styling for the social icons using Font Awesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 .social-icons {
@@ -881,27 +963,32 @@
 }
 
 
+/* Styling for the charity section */
 #charity {
   padding: 50px;
   background-color: #f9f9f9;
 }
 
+/* Styling for the heading within the charity section */
 #charity h2 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 30px;
 }
 
+/* Styling for the grid container that holds the charity cards */
 .charity-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
+/* Styling for each individual charity card */
 .charity-card {
   text-align: center;
 }
 
+/* Styling for the images within the charity cards */
 .charity-card img {
   width: 100%;
   max-width: 300px;
@@ -909,13 +996,16 @@
   border-radius: 10px;
 }
 
+/* Styling for the heading within each charity card */
 .charity-card h3 {
   font-size: 18px;
   margin-top: 15px;
   margin-bottom: 10px;
 }
 
+/* Styling for the paragraph within each charity card */
 .charity-card p {
   font-size: 14px;
   color: #5c5c5c;
 }
+

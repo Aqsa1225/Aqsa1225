@@ -1,141 +1,142 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2b2828;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #000;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #2b2828;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #000000;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styles for the main content */
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the album header image */
+.album-header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styles for the album information section */
+.album-info {
+  margin-bottom: 30px;
+}
+
+.album-info h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.album-info p {
+  margin: 10px 0;
+  line-height: 1.4;
+  color: #f8f5f5;
+}
+
+/* Styles for the album images section */
+.album-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.album-images .image {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.album-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles for the album description section */
+.album-description {
+  margin-bottom: 30px;
+}
+
+.album-description h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.album-description p {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
   main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  
-  .album-header img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .album-info {
-    margin-bottom: 30px;
-  }
-  
-  .album-info h2 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #ffffff;
-  }
-  
-  .album-info p {
-    margin: 10px 0;
-    line-height: 1.4;
-    color: #f8f5f5;
-  }
-  
-  .album-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 30px;
+    padding: 10px;
   }
   
   .album-images .image {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-  }
-  
-  .album-images img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
-  
-  .album-description {
-    margin-bottom: 30px;
-  }
-  
-  .album-description h2 {
-    margin-top: 0;
-    font-size: 24px;
-    color: #ffffff;
-  }
-  
-  .album-description p {
-    margin-bottom: 10px;
-    line-height: 1.4;
-    color: #ffffff;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 600px) {
-    main {
-      padding: 10px;
-    }
-    
-    .album-images .image {
-      width: 100%;
-    }
-  }
-  
+}
 
-  /* Global styles */
+/* Header styles */
+header {
+  background-color: #000000;
+  padding: 20px;
+  color: #fff;
+}
 
-  
-  /* Header styles */
-  header {
-    background-color: #000000;
-    padding: 20px;
-    color: #fff;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-right: 10px;
-  }
-  
-  .nav-links li a {
-    color: #fff;
-    text-decoration: none;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-  footer {
-    background-color: #000000;
-    padding: 20px 0;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+}
   
   .footer-container {
     max-width: 1200px;
