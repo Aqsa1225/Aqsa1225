@@ -66,6 +66,9 @@ header {
   margin-top: 10px;
 }
 
+.bts .btn:hover {
+  background-color: #00d9ff; /* Change the background color on hover */
+}
 /* Navigation styles */
 
 /* Style the navigation bar */
